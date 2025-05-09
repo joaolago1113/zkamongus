@@ -1,0 +1,10 @@
+[package]
+name = "zk_amongus"
+type = "lib"
+authors = [""]
+compiler_version = "1.0.0"
+# compiler_version = "0.35.0" # Previous version causing issues
+flags = ["--enable-unstable", "ownership"] # Ensure correctly placed
+
+[dependencies]
+mpclib = {tag="main", git = "https://github.com/zac-williamson/mpclib"}

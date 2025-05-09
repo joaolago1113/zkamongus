@@ -1,0 +1,7 @@
+[package]
+name = "circuit"
+type = "bin"
+
+[dependencies]
+# Use the adapted local zk_amongus library
+zk_amongus = { path = "../../zk_amongus" }
