@@ -1,5 +1,7 @@
 # ZK Among Us
 
+![image](https://github.com/user-attachments/assets/3f3b3a85-7e21-4874-bcc7-e11803beb019)
+
 ## What is ZK Among Us?
 
 ZK Among Us is a social deduction game that brings the thrill of Among Us into the world of zero-knowledge proofs. Players navigate a map, complete tasks (or pretend to!), and try to identify the imposter(s) among them, all while their critical information is cryptographically secured.
@@ -17,6 +19,7 @@ ZK Among Us is a social deduction game that brings the thrill of Among Us into t
 
 The game simulates a multiplayer environment where each player controls their character.
 
+*   **Fog of War via mpclib**: The fog‑of‑war mechanic that restricts what each player can see is enforced with secure multiparty computation using [mpclib](https://github.com/zac-williamson/mpclib). This guarantees that clients cannot access information beyond their permitted view while preserving game integrity.
 *   **Character & Visibility**: Your character is a representation of an Among Us crewmate/imposter. You have limited visibility and can only see adjacent sections on the map, including diagonals (e.g., if you are at (x, y), you can see (x+1, y), (x-1, y), (x, y+1), (x, y-1), (x+1, y+1), (x+1, y-1), (x-1, y+1), and (x-1, y-1)).
 *   **Movement**: You can move your character by clicking on any of the visible adjacent sections.
 *   **Objective (Crew Members)**: The primary goal for crew members is to collect all the items scattered around the map and then return to a designated base area to initiate a vote.
